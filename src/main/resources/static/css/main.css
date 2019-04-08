@@ -1,0 +1,920 @@
+/*! Jamayette <jason.zhu.develop@gmail.com> | MIT License */
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article, aside, footer, header, nav, section {
+    display: block
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+input {
+    size: 800px;
+}
+
+figcaption, figure, main {
+    display: block
+}
+
+figure {
+    margin: 1em 40px
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b, strong {
+    font-weight: inherit;
+    font-weight: bolder
+}
+
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: 1em
+}
+
+dfn {
+    font-style: italic
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+audio, video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+button, input, optgroup, select, textarea {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0
+}
+
+button, input {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35em .75em .625em
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type=search] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details, menu {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+canvas {
+    display: inline-block
+}
+
+[hidden], template {
+    display: none
+}
+
+.typo {
+    color: #111;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.8;
+    word-wrap: break-word
+}
+
+.typo h1, .typo h2, .typo h3 {
+    line-height: 1;
+    margin: 40px 0 30px
+}
+
+.typo h1 {
+    font-size: 24px
+}
+
+.typo h2 {
+    font-size: 20px;
+    padding: 3px 10px;
+    line-height: 1;
+    border-left: 6px solid #111
+}
+
+.typo h3 {
+    font-size: 18px
+}
+
+.typo h4 {
+    font-size: 16px
+}
+
+.typo h5 {
+    font-size: 14px
+}
+
+.typo h6 {
+    font-size: 12px
+}
+
+.typo blockquote, .typo h4, .typo ol, .typo p, .typo pre, .typo table, .typo ul {
+    margin: 30px 0
+}
+
+.typo p {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px
+}
+
+.typo blockquote:first-child, .typo h1:first-child, .typo h2:first-child, .typo h3:first-child, .typo h4:first-child, .typo ol:first-child, .typo p:first-child, .typo pre:first-child, .typo table:first-child, .typo ul:first-child {
+    margin-top: 0
+}
+
+.typo ol, .typo ul {
+    list-style-position: inside;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0
+}
+
+.typo ul li {
+    list-style-type: square
+}
+
+.typo ol li {
+    list-style-type: decimal
+}
+
+.typo ol p:first-child, .typo ul p:first-child {
+    margin: 0
+}
+
+.typo ol ol, .typo ol ul, .typo ul ol, .typo ul ul {
+    margin: 0 0 0 30px
+}
+
+.typo audio, .typo img, .typo video {
+    max-width: 100%;
+    position: static !important
+}
+
+.typo blockquote {
+    color: #111;
+    background: #f2f2f2;
+    border-left: 3px solid #aaa;
+    padding: 10px;
+    margin-left: 10px
+}
+
+.typo blockquote p:first-child {
+    margin-top: 0
+}
+
+.typo blockquote p:last-child {
+    margin-bottom: 0
+}
+
+.typo code, .typo pre {
+    font-size: small
+}
+
+.typo code {
+    color: #fff;
+    background-color: #222;
+    border-radius: 3px;
+    margin: 0 1px;
+    padding: 2px 5px
+}
+
+.typo code, .typo pre {
+    font-family: Consolas, Courier, PingFang SC, PingFang TC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, Source Han Sans CN, Noto Sans SC, Source Han Sans TC, Noto Sans CJK TC, SimSun, monospace
+}
+
+.typo pre {
+    background-color: #111;
+    padding: 15px;
+    position: relative;
+    border: none;
+    overflow: auto;
+    border-radius: 3px
+}
+
+.typo pre code {
+    padding: 0;
+    font-family: Consolas, Courier, PingFang SC, PingFang TC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, Source Han Sans CN, Noto Sans SC, Source Han Sans TC, Noto Sans CJK TC, SimSun, monospace;
+    background-color: transparent;
+    overflow-wrap: normal;
+    white-space: inherit
+}
+
+.typo hr {
+    margin: 40px auto;
+    border: none;
+    border-top: 1px solid #222
+}
+
+.typo kbd {
+    padding: 4px 4px 3px;
+    background: #f2f2f2;
+    color: #111
+}
+
+.typo table {
+    width: 100%;
+    border-collapse: collapse
+}
+
+.typo table td, .typo table th {
+    border: 1px solid #111;
+    padding: 3px 5px;
+    word-break: normal
+}
+
+.typo table th {
+    background: #f2f2f2
+}
+
+*, :after, :before {
+    box-sizing: inherit
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both
+}
+
+body {
+    background-color: #fff;
+    font-size: 14px
+}
+
+a, body {
+    font-family: Consolas, Courier, PingFang SC, PingFang TC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, Source Han Sans CN, Noto Sans SC, Source Han Sans TC, Noto Sans CJK TC, SimSun, monospace
+}
+
+a {
+    color: #170fd4;
+    text-decoration: none;
+    transition: all .3s
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+.container {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px
+}
+
+@media (min-width: 800px) {
+    .container {
+        width: 800px
+    }
+}
+
+.container:after {
+    display: block;
+    content: "";
+    clear: both
+}
+
+.layout-container {
+    margin-bottom: 20px
+}
+
+.layout-container .container:after {
+    display: block;
+    content: "";
+    clear: both
+}
+
+.header-bar, .layout-footer, .layout-header {
+    display: block
+}
+
+.header-bar {
+    margin: 20px auto 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc
+}
+
+.header-bar__list--menu {
+    float: left
+}
+
+.header-bar__list--menu .item--logo a {
+    color: #111
+}
+
+.header-bar__list--menu .item--logo a:hover {
+    color: #170fd4;
+    text-decoration: none
+}
+
+.header-bar__list--menu .item--logo a {
+    font-size: 26px
+}
+
+.header-bar__list--link {
+    float: right;
+    margin-top: 5px
+}
+
+.header-bar__list--link .item {
+    display: inline-block
+}
+
+.header-bar__list--link .item:before {
+    color: #b8b5fa;
+    content: "/";
+    margin: 0 1px
+}
+
+.header-bar__list--link .item:first-child:before {
+    display: none
+}
+
+.header-bar__list--link .item a {
+    font-size: small
+}
+
+.header-bar__list--link .item--block a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 4px;
+    margin: 0 2px;
+    line-height: 1;
+    border-radius: 2px
+}
+
+.header-bar__list--link .item--block a:hover {
+    color: #111
+}
+
+.header-bar__list--link .item--block {
+    font-size: 100%
+}
+
+.header-bar__list--link .item--book a {
+    background: #ff8
+}
+
+.header-bar__list--link .item--book a:hover {
+    background: #fff62e
+}
+
+.header-bar__list--link .item--movie a {
+    background: #c7ffff
+}
+
+.header-bar__list--link .item--movie a:hover {
+    background: #7bffff
+}
+
+.header-bar__list--link .item--tech a {
+    background: #eee9ff
+}
+
+.header-bar__list--link .item--tech a:hover {
+    background: #dad0ff
+}
+
+.footer-bar {
+    margin: 50px auto;
+    padding-top: 40px;
+    border-top: 1px solid #ccc;
+    color: #222;
+    font-size: small
+}
+
+.footer-bar__copyright {
+    float: right
+}
+
+.footer-bar__logo {
+    float: left
+}
+
+.footer-bar__logo a {
+    color: #111;
+    text-decoration: none
+}
+
+.footer-bar__logo a:hover {
+    color: #170fd4
+}
+
+.book-list {
+    margin: 0;
+    padding: 0
+}
+
+.book-list__item {
+    margin: 30px 0;
+    list-style: inside none;
+    position: relative;
+    min-height: 120px
+}
+
+.book-list__item .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 80px
+}
+
+.book-list__item .image a {
+    display: block;
+    text-decoration: none;
+    line-height: 0
+}
+
+.book-list__item .image img {
+    line-height: 0;
+    width: 100%
+}
+
+.book-list__item .info {
+    padding-left: 93px;
+    display: inline-block;
+    vertical-align: top
+}
+
+.book-list__item .info .author, .book-list__item .info .status, .book-list__item .info .title {
+    margin: 0;
+    padding: 0
+}
+
+.book-list__item .info .title {
+    display: inline-block;
+    font-size: 115%;
+    line-height: 1.6;
+    margin-bottom: 2px
+}
+
+.book-list__item .info .author {
+    display: block;
+    font-size: 80%;
+    font-weight: 400;
+    color: #bbb;
+    margin-bottom: 10px
+}
+
+.book-list__item .info .status {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 1px 3px;
+    line-height: 1;
+    font-size: 80%;
+    font-weight: 400;
+    opacity: .8;
+    color: #111
+}
+
+.book-list__item .info .status--wish {
+    border-color: #e9fc00;
+    background: #f7ff96
+}
+
+.book-list__item .info .status--reading {
+    border-color: #a1ff73;
+    background: #c3ffa6
+}
+
+.book-list__item .info .status--read {
+    border-color: #d6caff;
+    background: #eee9ff
+}
+
+.book-list__item .info .comment {
+    line-height: 1.6;
+    margin: 0;
+    padding: 0
+}
+
+.entry-list__category, .entry-list__year {
+    display: block;
+    margin: 10px 0;
+    font-size: 24px;
+    color: #111
+}
+
+.entry-list__category span, .entry-list__year span {
+    font-weight: 700;
+    font-style: italic
+}
+
+.entry-list__category strong, .entry-list__year strong {
+    margin-left: 3px
+}
+
+.entry-list__list {
+    list-style: inside none;
+    margin: 0 0 60px;
+    padding: 0
+}
+
+.entry-list__item {
+    line-height: 2.2
+}
+
+.entry-list__item .date, .entry-list__item .link, .entry-list__item .title {
+    display: initial;
+    line-height: 1
+}
+
+.entry-list__item .title {
+    font-size: 14px;
+    font-weight: 400
+}
+
+.tag-list__title {
+    display: block;
+    margin: 10px 0;
+    font-size: 24px;
+    color: #111
+}
+
+.tag-list__title span {
+    font-weight: 700;
+    font-style: italic
+}
+
+.tag-list__title strong {
+    margin-left: 3px
+}
+
+.tag-list__list {
+    list-style: inside none;
+    margin: 0 0 60px;
+    padding: 0;
+    line-height: 2.5
+}
+
+.tag-list .line {
+    color: #ccc
+}
+
+.entry-item__header {
+    margin-bottom: 20px
+}
+
+.entry-item__header h1 {
+    word-break: break-all;
+    line-height: 1.4;
+    color: #222;
+    font-size: 24px;
+    margin: 0;
+    padding: 0
+}
+
+.entry-item__header .date {
+    color: #222;
+    margin-top: 15px;
+    padding: 0;
+    line-height: 1
+}
+
+.entry-item__header .date sup {
+    font-size: 9px
+}
+
+.entry-item__header .date span {
+    font-style: italic;
+    margin-right: 2px
+}
+
+.entry-item__container .typo {
+    color: #222
+}
+
+.entry-item__container .typo img {
+    padding-left: -3%
+}
+
+.entry-item__container .eof {
+    display: none;
+    font-size: small;
+    color: #222;
+    margin: 50px 0
+}
+
+.entry-item__container .category {
+    margin: 50px 0
+}
+
+.entry-item__footer .back {
+    display: block;
+    margin-top: 100px
+}
+
+code[class*=language-], pre[class*=language-] {
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word
+}
+
+:not(pre) > code[class*=language-] {
+    padding: .15em .2em .05em;
+    border-radius: .3em;
+    border: .13em solid #7a6652;
+    box-shadow: inset 1px 1px .3em -.1em #000
+}
+
+.namespace {
+    opacity: .7
+}
+
+.token.cdata, .token.comment, .token.doctype, .token.prolog {
+    color: #6f705e
+}
+
+.token.boolean, .token.null, .token.number, .token.operator {
+    color: #a77afe
+}
+
+.language-css .token.string, .style .token.string, .token.attr-name, .token.entity, .token.string, .token.url {
+    color: #e6d06c
+}
+
+.token.selector {
+    color: #a6e22d
+}
+
+.token.atrule, .token.attr-value, .token.control, .token.directive, .token.important, .token.keyword, .token.unit {
+    color: #ef3b7d
+}
+
+.token.regex, .token.statement {
+    color: #76d9e6
+}
+
+.token.placeholder, .token.variable {
+    color: #fff
+}
+
+.token.important, .token.statement {
+    font-weight: 700
+}
+
+.token.punctuation {
+    color: #bebec5
+}
+
+.token.entity {
+    cursor: help
+}
+
+.token.debug {
+    color: red
+}
+
+pre[data-line] {
+    position: relative;
+    padding: 1em 0 1em 3em
+}
+
+.line-highlight {
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-top: inherit;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: inherit;
+    margin-top: 1em;
+    background: hsla(0, 0%, 100%, .08);
+    pointer-events: none;
+    line-height: inherit;
+    white-space: pre
+}
+
+.line-highlight:before, .line-highlight[data-end]:after {
+    content: attr(data-start);
+    position: absolute;
+    top: .4em;
+    left: .6em;
+    min-width: 1em;
+    padding: .2em .5em;
+    background-color: hsla(0, 0%, 100%, .4);
+    color: #000;
+    font: 700 65%/1 sans-serif;
+    height: 1em;
+    line-height: 1em;
+    text-align: center;
+    border-radius: 999px;
+    text-shadow: none;
+    box-shadow: 0 1px 1px hsla(0, 0%, 100%, .7)
+}
+
+.line-highlight[data-end]:after {
+    content: attr(data-end);
+    top: auto;
+    bottom: .4em
+}
+
+code.language-markup {
+    color: #f9f9f9
+}
+
+code.language-markup .token.tag {
+    color: #ef3b7d
+}
+
+code.language-markup .token.attr-name {
+    color: #a6e22d
+}
+
+code.language-markup .token.attr-value {
+    color: #e6d06c
+}
+
+code.language-markup .token.script, code.language-markup .token.script .token.keyword, code.language-markup .token.style {
+    color: #76d9e6
+}
+
+code[class*=language-], pre[class*=language-] {
+    white-space: pre !important;
+    word-wrap: normal !important;
+    overflow: auto;
+    max-height: 610px
+}
+
+pre {
+    position: relative
+}
+
+pre, pre:before {
+    font-family: Consolas, Courier, PingFang SC, PingFang TC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, Source Han Sans CN, Noto Sans SC, Source Han Sans TC, Noto Sans CJK TC, SimSun, monospace
+}
+
+pre:before {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .5em 0;
+    font-size: 11px;
+    line-height: 1;
+    color: #bebec5;
+    text-indent: 1em
+}
+
+pre code {
+    font-family: Consolas, Courier, PingFang SC, PingFang TC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, Source Han Sans CN, Noto Sans SC, Source Han Sans TC, Noto Sans CJK TC, SimSun, monospace;
+    overflow: auto;
+    white-space: pre;
+    display: block
+}
+
+pre.language-markup:before {
+    content: "HTML"
+}
+
+pre.language-css:before {
+    content: "CSS"
+}
+
+pre.language-javascript:before {
+    content: "JavaScript"
+}
+
+pre.language-php:before {
+    content: "Java"
+}
+
+pre.language-scss:before {
+    content: "SCSS (Sass / Compass)"
+}
