@@ -8,17 +8,18 @@
     <meta name="renderer" content="webkit">
     <meta name="apple-mobile-web-app-title" content="">
     <meta name="application-name" content="">
-    <link href="/css/main.css" rel="stylesheet">
+    <link href="/styles/main.css" rel="stylesheet">
 </head>
 
 <body class="body layout-body layout-body--item">
+
 <div class="layout-header">
     <div class="container">
         <div class="header-bar clearfix">
             <div class="header-bar__list header-bar__list--menu">
                 <div class="item item--logo">
                     <a href="/">
-                        <img src="/favicon.ico" alt="home"/>
+                        <i class="fi fi-logo"></i>
                     </a>
                 </div>
             </div>

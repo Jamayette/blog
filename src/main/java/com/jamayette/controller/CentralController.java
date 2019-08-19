@@ -28,11 +28,9 @@ public class CentralController {
 
 	@RequestMapping(value = "/doAuth")
 	public void auth(String auth, HttpServletRequest request, HttpServletResponse response) throws IOException {
-
 		User user = new User();
 		user.setPassword(auth);
 		User checkUser = userMapper.selectOne(user);
-
 		if (checkUser != null) {
 			request.getSession().setAttribute("token", "jamayette");
 			response.sendRedirect("/m");

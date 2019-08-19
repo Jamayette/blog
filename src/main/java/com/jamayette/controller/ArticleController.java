@@ -16,7 +16,7 @@ public class ArticleController {
 	@Autowired
 	private IArticleService articleService;
 
-	@RequestMapping(value = {"/article", "/"})
+	@RequestMapping("/article")
 	public String findAll(Model model) {
 		List<Article> articleList = articleService.findAllArticles();
 		model.addAttribute(articleList);
@@ -24,7 +24,7 @@ public class ArticleController {
 	}
 
 	@RequestMapping("/article/{name}")
-	public String findById(Model model, @PathVariable String name) {
+	public String findByName(Model model, @PathVariable String name) {
 		Article article = articleService.findArticleByName(name);
 		if (article.getStatus() != 1) {
 			return "/error/404";

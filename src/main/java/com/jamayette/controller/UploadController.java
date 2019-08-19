@@ -1,6 +1,6 @@
 package com.jamayette.controller;
 
-import com.jamayette.util.QiniuUtil;
+import com.jamayette.util.UploadUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -23,7 +23,7 @@ public class UploadController {
 			return "文件为空";
 		}
 
-		String fileName = QiniuUtil.upload(file);
+		String fileName = UploadUtil.upload(file);
 
 		try {
 
@@ -31,7 +31,7 @@ public class UploadController {
 			String callback = request.getParameter("CKEditorFuncNum");
 			ServletOutputStream out = response.getOutputStream();
 			out.println("<script type=\"text/javascript\">");
-			out.println("window.parent.CKEDITOR.tools.callFunction(" + callback + ",'" + QiniuUtil.QINIU_URL + fileName + "',''" + ")");
+			out.println("window.parent.CKEDITOR.tools.callFunction(" + callback + ",'" + " URL " + fileName + "',''" + ")");
 			out.println("</script>");
 			out.flush();
 			out.close();

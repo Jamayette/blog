@@ -1,10 +1,10 @@
 package com.jamayette.mapper;
 
 import com.jamayette.model.Thoughts;
-import com.jamayette.util.MyMapper;
+import com.jamayette.util.BaseMapper;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ThoughtsMapper extends MyMapper<Thoughts> {
+public interface ThoughtsMapper extends BaseMapper<Thoughts> {
 
 }
