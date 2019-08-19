@@ -12,7 +12,7 @@
         <input type="text" name="publishYear" placeholder="publishYear"/><br>
         <input type="text" name="imgUrl" placeholder="imgUrl" size="60"/><br>
         <input type="text" name="introUrl" placeholder="introUrl" size="60"/><br>
-        <textarea name="comment" rows="24" cols="72"></textarea><br>
+        <textarea name="comment" rows="24" cols="72" title="comment"></textarea><br>
         <button type="submit">Submit</button>
     </form>
 </body>

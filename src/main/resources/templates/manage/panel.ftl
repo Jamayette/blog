@@ -8,8 +8,8 @@
     <div class="container">
 
         <div>
-            <a href="/m/article/create">new article</a> /
-            <a href="/m/thoughts/create">new thoughts</a> /
+            <a href="/m/tech/create">new tech</a> /
+            <a href="/m/life/create">new life</a> /
             <a href="/m/book/create">new book</a> /
             <a href="/m/movie/create">new movie</a> /
             <a href="/m/message">send message</a>
@@ -19,31 +19,31 @@
 
         <div class="entry-list">
 
-            <div class="entry-list__year"><span>*</span><strong>article</strong></div>
+            <div class="entry-list__year"><span>*</span><strong>tech</strong></div>
             <ul class="entry-list__list">
-                <#if articleList??>
-                    <#list articleList as article>
+                <#if techList??>
+                    <#list techList as tech>
                         <li class="entry-list__item">
                             <span>- </span>
-                            <a href="/article/${article.name}" class="link"><strong class="title">${article.title}</strong></a>
-                            <span>${article.createTime?date}<span>
-                            <a href="/m/article/edit/${article.id?c}" class="link">modify</strong></a> /
-                            <a href="/m/article/delete/${article.id?c}" class="link">delete</strong></a>
+                            <a href="/tech/${tech.name}" class="link"><strong class="title">${tech.title}</strong></a>
+                            <span>${tech.createTime?date}<span>
+                            <a href="/m/tech/edit/${tech.id?c}" class="link">modify</strong></a> /
+                            <a href="/m/tech/delete/${tech.id?c}" class="link">delete</strong></a>
                         </li>
                     </#list>
                 </#if>
             </ul>
 
-            <div class="entry-list__year"><span>*</span><strong>thoughts</strong></div>
+            <div class="entry-list__year"><span>*</span><strong>life</strong></div>
             <ul class="entry-list__list">
-                <#if thoughtsList??>
-                    <#list thoughtsList as thoughts>
+                <#if lifeList??>
+                    <#list lifeList as life>
                         <li class="entry-list__item">
                             <span>- </span>
-                            <a href="/thoughts/${thoughts.name}" class="link"><strong class="title">${thoughts.title}</strong></a>
-                            <span>${thoughts.createTime?date}<span>
-                            <a href="/m/thoughts/edit/${thoughts.id?c}" class="link">modify</strong></a> /
-                            <a href="/m/thoughts/delete/${thoughts.id?c}" class="link">delete</strong></a>
+                            <a href="/life/${life.name}" class="link"><strong class="title">${life.title}</strong></a>
+                            <span>${life.createTime?date}<span>
+                            <a href="/m/life/edit/${life.id?c}" class="link">modify</strong></a> /
+                            <a href="/m/life/delete/${life.id?c}" class="link">delete</strong></a>
                         </li>
                     </#list>
                 </#if>
@@ -64,26 +64,10 @@
                 </#if>
             </ul>
 
-            <div class="entry-list__year"><span>*</span><strong>movie</strong></div>
-            <ul class="entry-list__list">
-                <#if movieList??>
-                    <#list movieList as movie>
-                        <li class="entry-list__item">
-                            <span>- </span>
-                            <a href="/" class="link"><strong class="title">${movie.title}</strong></a>
-                            <span>${movie.onYear}<span>
-                            <a href="/m/movie/edit/${movie.id?c}" class="link">modify</strong></a> /
-                            <a href="/m/movie/delete/${movie.id?c}" class="link">delete</strong></a>
-                        </li>
-                    </#list>
-                </#if>
-            </ul>
-
         </div>
     </div>
 </div>
 
 <#include "/common/footer.ftl"/>
 
-</body>
 </html>

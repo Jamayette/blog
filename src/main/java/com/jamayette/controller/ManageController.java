@@ -1,33 +1,26 @@
 package com.jamayette.controller;
 
-import com.jamayette.service.IArticleService;
+import com.jamayette.service.ITechService;
 import com.jamayette.service.IBookService;
-import com.jamayette.service.IMovieService;
-import com.jamayette.service.IThoughtsService;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.jamayette.service.ILifeService;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/m")
+@AllArgsConstructor
 public class ManageController {
 
-	@Autowired
-	private IArticleService articleService;
-	@Autowired
-	private IBookService bookService;
-	@Autowired
-	private IThoughtsService thoughtsService;
-	@Autowired
-	private IMovieService movieService;
+	private final ITechService techService;
+	private final IBookService bookService;
+	private final ILifeService lifeService;
 
-	@RequestMapping("")
+	@RequestMapping("/m")
 	public String mangePanel(Model model) {
-		model.addAttribute(articleService.findAllArticles());
+		model.addAttribute(techService.findAllTechs());
 		model.addAttribute(bookService.findAllBooks());
-		model.addAttribute(thoughtsService.findAllThoughts());
-		model.addAttribute(movieService.findAllMovies());
+		model.addAttribute(lifeService.findAllLife());
 		return "/manage/panel";
 	}
 

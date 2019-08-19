@@ -25,10 +25,10 @@
             </div>
             <div class="header-bar__list header-bar__list--link">
                 <div class="item">
-                    <a href="/article">article</a>
+                    <a href="/tech">tech</a>
                 </div>
                 <div class="item">
-                    <a href="/thoughts">thoughts</a>
+                    <a href="/life">life</a>
                 </div>
                 <div class="item">
                     <a href="/book">book</a>

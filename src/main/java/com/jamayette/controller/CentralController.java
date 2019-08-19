@@ -2,6 +2,7 @@ package com.jamayette.controller;
 
 import com.jamayette.mapper.UserMapper;
 import com.jamayette.model.User;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,14 +12,19 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Controller
+@AllArgsConstructor
 public class CentralController {
 
-	@Autowired
-	UserMapper userMapper;
+	private final UserMapper userMapper;
 
 	@RequestMapping("")
 	public String index() {
-		return "/article";
+		return "/tech";
+	}
+
+	@RequestMapping("/about")
+	public String findAll() {
+		return "about/about";
 	}
 
 	@RequestMapping("/auth")
@@ -37,7 +43,6 @@ public class CentralController {
 		} else {
 			response.sendRedirect("/");
 		}
-
 	}
 
 }

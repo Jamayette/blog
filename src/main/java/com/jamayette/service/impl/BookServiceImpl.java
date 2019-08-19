@@ -3,6 +3,7 @@ package com.jamayette.service.impl;
 import com.jamayette.mapper.BookMapper;
 import com.jamayette.model.Book;
 import com.jamayette.service.IBookService;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import tk.mybatis.mapper.entity.Example;
@@ -11,10 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@AllArgsConstructor
 public class BookServiceImpl implements IBookService {
 
-	@Autowired
-	private BookMapper bookMapper;
+	private final BookMapper bookMapper;
 
 	@Override
 	public List<Book> findAllBooks() {

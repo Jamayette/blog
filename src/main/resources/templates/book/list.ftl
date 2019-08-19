@@ -37,5 +37,4 @@
 
 <#include "/common/footer.ftl"/>
 
-</body>
 </html>
