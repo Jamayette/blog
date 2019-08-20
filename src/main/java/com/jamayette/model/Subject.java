@@ -7,9 +7,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Table(name = "book")
+@Table(name = "subject")
 @Data
-public class Book {
+public class Subject {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,3 +30,4 @@ public class Book {
 	private Integer status;
 
 }
+

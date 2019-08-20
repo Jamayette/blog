@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>comment a book - Jamayette</title>
+    <title>comment a subject - Jamayette</title>
 </head>
 
 <body>
-    <form action="/m/book/edit/submit" method="POST">
+    <form action="/m/subject/edit/submit" method="POST">
         <input type="text" name="title" placeholder="title" size="46"/><br>
         <input type="text" name="author" placeholder="author"/>
         <input type="text" name="publishYear" placeholder="publishYear"/><br>

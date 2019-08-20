@@ -10,9 +10,7 @@
         <div>
             <a href="/m/tech/create">new tech</a> /
             <a href="/m/life/create">new life</a> /
-            <a href="/m/book/create">new book</a> /
-            <a href="/m/movie/create">new movie</a> /
-            <a href="/m/message">send message</a>
+            <a href="/m/subject/create">new subject</a> /
         </div>
 
         <hr/>
@@ -49,16 +47,16 @@
                 </#if>
             </ul>
 
-            <div class="entry-list__year"><span>*</span><strong>book</strong></div>
+            <div class="entry-list__year"><span>*</span><strong>subject</strong></div>
             <ul class="entry-list__list">
-                <#if bookList??>
-                    <#list bookList as book>
+                <#if subjectList??>
+                    <#list subjectList as subject>
                         <li class="entry-list__item">
                             <span>- </span>
-                            <a href="${book.introUrl}" class="link" target="_blank"><strong class="title">${book.title}</strong></a>
-                            <span>${book.publishYear}<span>
-                            <a href="/m/book/edit/${book.id?c}" class="link">modify</strong></a> /
-                            <a href="/m/book/delete/${book.id?c}" class="link">delete</strong></a>
+                            <a href="${subject.introUrl}" class="link" target="_blank"><strong class="title">${subject.title}</strong></a>
+                            <span>${subject.publishYear}<span>
+                            <a href="/m/subject/edit/${subject.id?c}" class="link">modify</strong></a> /
+                            <a href="/m/subject/delete/${subject.id?c}" class="link">delete</strong></a>
                         </li>
                     </#list>
                 </#if>

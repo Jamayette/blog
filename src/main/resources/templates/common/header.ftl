@@ -31,10 +31,7 @@
                     <a href="/life">life</a>
                 </div>
                 <div class="item">
-                    <a href="/book">book</a>
-                </div>
-                <div class="item">
-                    <a href="/movie">movie</a>
+                    <a href="/subject">subject</a>
                 </div>
                 <div class="item">
                     <a href="/about">about</a>
