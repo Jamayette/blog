@@ -1,6 +1,7 @@
 package com.jamayette;
 
 import com.jamayette.mapper.UserMapper;
+import com.jamayette.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,11 +18,11 @@ public class BlogApplicationTests {
 	@Test
 	public void myBlogTest() {
 
-		String str1 = "hello world";
-		int length = str1.length();
-		System.out.println(length);
+//		User user = userMapper.selectUser(1);
+//		System.err.println(user);
+//
+//		userMapper.updateUser();
 
-		System.err.println("hello test");
 	}
 
 }
